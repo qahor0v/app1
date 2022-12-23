@@ -14,28 +14,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HelloWorld(),
+      home: const HomePage(),
     );
   }
 }
-
-class HelloWorld extends StatelessWidget {
-  const HelloWorld({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.yellow,
-      body: Center(
-        child: Text(
-          "I love Flutter",
-          style: TextStyle(
-            color: Colors.blueAccent,
-            fontWeight: FontWeight.w800,
-            fontSize: 30,
-          ),
-        ),
-      ),
-    );
+    return const Placeholder();
   }
 }
