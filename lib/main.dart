@@ -28,7 +28,7 @@ class HelloWorld extends StatelessWidget {
       backgroundColor: Colors.yellow,
       body: Center(
         child: Text(
-          "Hello My Flutter",
+          "I love Flutter",
           style: TextStyle(
             color: Colors.blueAccent,
             fontWeight: FontWeight.w800,
